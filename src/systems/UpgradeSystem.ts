@@ -19,13 +19,13 @@ export class UpgradeSystem {
     this.panelGraphics = scene.add.graphics();
     this.panelGraphics.setDepth(100);
 
-    this.titleText = scene.add.text(0, 0, 'LEVEL UP!', {
+    this.titleText = scene.add.text(0, 0, '升级！', {
       fontSize: '28px',
       color: '#ffffff',
       fontStyle: 'bold',
     }).setOrigin(0.5).setDepth(101);
 
-    this.skipText = scene.add.text(0, 0, '[ Skip ]', {
+    this.skipText = scene.add.text(0, 0, '[ 跳过 ]', {
       fontSize: '18px',
       color: '#aaaaaa',
       backgroundColor: '#333333',

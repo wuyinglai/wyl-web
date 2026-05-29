@@ -7,12 +7,12 @@ export interface UpgradeOption {
 }
 
 export const UPGRADES: UpgradeOption[] = [
-  { id: 'attack_up', name: 'ATK Up', description: 'Attack +10', icon: '⚔️', rarity: 'common' },
-  { id: 'attack_speed_up', name: 'SPD Up', description: 'Attack Speed +20%', icon: '⚡', rarity: 'common' },
-  { id: 'health_up', name: 'HP Up', description: 'Max HP +30', icon: '❤️', rarity: 'common' },
-  { id: 'life_steal', name: 'Life Steal', description: 'Kill heals 5% HP', icon: '🧛', rarity: 'rare' },
-  { id: 'auto_blade', name: 'Auto Blade', description: '+1 orbiting blade', icon: '🌀', rarity: 'rare' },
-  { id: 'crit_heavy', name: 'Critical Hit', description: 'Crit +15%, Crit DMG +50%', icon: '💥', rarity: 'rare' },
+  { id: 'attack_up', name: '攻击力提升', description: '攻击力 +10', icon: '⚔️', rarity: 'common' },
+  { id: 'attack_speed_up', name: '攻速提升', description: '攻击速度 +20%', icon: '⚡', rarity: 'common' },
+  { id: 'health_up', name: '生命提升', description: '最大生命 +30', icon: '❤️', rarity: 'common' },
+  { id: 'life_steal', name: '生命偷取', description: '击杀回复 5% 生命', icon: '🧛', rarity: 'rare' },
+  { id: 'auto_blade', name: '自动飞刃', description: '+1 个环绕飞刃', icon: '🌀', rarity: 'rare' },
+  { id: 'crit_heavy', name: '暴击重击', description: '暴击率 +15%, 暴击伤害 +50%', icon: '💥', rarity: 'rare' },
 ];
 
 export interface GameState {

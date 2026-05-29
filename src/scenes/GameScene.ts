@@ -75,7 +75,7 @@ export class GameScene extends Phaser.Scene {
     this.levelText = this.add.text(16, 62, '', { fontSize: '16px', color: '#ffff44', fontFamily: 'monospace' }).setDepth(200);
     this.killsText = this.add.text(16, 84, '', { fontSize: '16px', color: '#ff88ff', fontFamily: 'monospace' }).setDepth(200);
     this.fpsText = this.add.text(w - 16, 16, '', { fontSize: '14px', color: '#888888', fontFamily: 'monospace' }).setOrigin(1, 0).setDepth(200);
-    this.gameOverText = this.add.text(w / 2, h / 2, 'GAME OVER\nClick to restart', {
+    this.gameOverText = this.add.text(w / 2, h / 2, '游戏结束\n点击重新开始', {
       fontSize: '36px', color: '#ff0000', fontStyle: 'bold', align: 'center',
     }).setOrigin(0.5).setDepth(300).setVisible(false);
 
@@ -203,10 +203,10 @@ export class GameScene extends Phaser.Scene {
   }
 
   updateUI() {
-    this.hpText.setText(`HP: ${this.state.hp} / ${this.state.maxHp}`);
+    this.hpText.setText(`生命: ${this.state.hp} / ${this.state.maxHp}`);
     const expPct = Math.floor((this.state.exp / this.state.expToNext) * 100);
-    this.expText.setText(`EXP: ${this.state.exp} / ${this.state.expToNext} (${expPct}%)`);
-    this.levelText.setText(`Level: ${this.state.level}`);
-    this.killsText.setText(`Kills: ${this.state.kills}`);
+    this.expText.setText(`经验: ${this.state.exp} / ${this.state.expToNext} (${expPct}%)`);
+    this.levelText.setText(`等级: ${this.state.level}`);
+    this.killsText.setText(`击杀: ${this.state.kills}`);
   }
 }
